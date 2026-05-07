@@ -82,21 +82,21 @@ const SCHEDULE_ITEMS = [
 ];
 
 const MATERIALS = [
-  {
-    title: "Fair Program",
-    description:
-      "Complete guide to sessions, speakers, and abstracts.",
-    type: "PDF",
-    // size: "2.4 MB",
-    link: "https://docs.google.com/document/d/13Mtm7R-RLAcA2vYZdOfQqDwZSWL6FT7xDPEZM2V8DZo/edit?usp=sharing",
-  },
-  {
-    title: "Poster Template",
-    description: "MindHive Poster Template.",
-    type: "PPTX",
-    // size: "1.1 MB",
-    link: "https://docs.google.com/presentation/d/1irxdLyCTTWgERrdLu2WGq0S1SKgVzVnk/edit?usp=sharing&ouid=111548153225746064432&rtpof=true&sd=true",
-  },
+  // {
+  //   title: "Fair Program",
+  //   description:
+  //     "Complete guide to sessions, speakers, and abstracts.",
+  //   type: "PDF",
+  //   // size: "2.4 MB",
+  //   link: "https://docs.google.com/document/d/13Mtm7R-RLAcA2vYZdOfQqDwZSWL6FT7xDPEZM2V8DZo/edit?usp=sharing",
+  // },
+  // {
+  //   title: "Poster Template",
+  //   description: "MindHive Poster Template.",
+  //   type: "PPTX",
+  //   // size: "1.1 MB",
+  //   link: "https://docs.google.com/presentation/d/1irxdLyCTTWgERrdLu2WGq0S1SKgVzVnk/edit?usp=sharing&ouid=111548153225746064432&rtpof=true&sd=true",
+  // },
   {
     title: "Flyer",
     description: "",
@@ -213,7 +213,8 @@ export function HomePage() {
                 </p>
               </div>
 
-              {/* <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
+                {/*
                 <Button
                   size="lg"
                   className="bg-primary hover:bg-primary-dark text-white font-bold py-7 px-8 rounded-2xl text-lg shadow-xl shadow-primary-light group border-none"
@@ -223,7 +224,7 @@ export function HomePage() {
                     View Schedule
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
-                </Button>
+                </Button>*/}
                 <Button
                   size="lg"
                   variant="outline"
@@ -232,7 +233,7 @@ export function HomePage() {
                 >
                   <a href="#materials">Event Materials</a>
                 </Button>
-              </div> */}
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100">
                 <a
@@ -436,14 +437,14 @@ export function HomePage() {
                   className="text-lg text-slate-600 font-large"
                   style={{ fontFamily: "Knewave, cursive" }}
                 >
-                  RELEASING MATERIAL SOON ;)
+                  {/* RELEASING MATERIAL SOON ;) */}
                 </p>
-                {/* <p className="text-lg text-slate-600 font-medium leading-relaxed">
+                <p className="text-lg text-slate-600 font-medium leading-relaxed">
                   Access everything you need for the fair below.
-                </p> */}
+                </p>
               </div>
 
-              {/* <div className="space-y-4">
+              <div className="space-y-4">
                 {MATERIALS.map((material, index) => (
                   <motion.a
                     key={`material-${material.title}-${index}`}
@@ -478,7 +479,7 @@ export function HomePage() {
                     </div>
                   </motion.a>
                 ))}
-              </div> */}
+              </div>
               {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
