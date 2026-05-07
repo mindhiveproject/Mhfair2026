@@ -99,11 +99,10 @@ const MATERIALS = [
   },
   {
     title: "Flyer",
-    description:
-      "Useful links and citations for research participants.",
+    description: "",
     type: "PDF",
     // size: "850 KB",
-    link: "https://drive.google.com/file/d/1uxIIuxMZu3i6gHSQXIJbMpv1XDf9PVuP/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1oMmhDKVuCrJK5cGnPeyhbwOjFPrfvKir/view?usp=sharing",
   },
 ];
 
@@ -268,7 +267,10 @@ export function HomePage() {
                       Location
                     </p>
                     <p className="font-bold text-slate-800">
-                      Kimmel Center, 60 Washington Square S
+                      Rosenthal Pavilion
+                    </p>
+                    <p className="font-bold text-slate-800">
+                      60 Washington Square S
                     </p>
                   </div>
                 </a>
