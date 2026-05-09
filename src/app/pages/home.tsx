@@ -25,13 +25,13 @@ const MATERIALS_IMAGE = imgMaterials;
 
 const SCHEDULE_ITEMS = [
   {
-    time: "10:45 - 11:00",
+    time: "9:00 - 9:30",
     event: "Arrival & Registration",
     icon: MapPin,
     color: "primary",
   },
   {
-    time: "11:00 - 11:10",
+    time: "9:30 - 9:40",
     event: "Opening Remarks & MindHive Team Intro",
     icon: Users,
     color: "secondary",
@@ -39,45 +39,43 @@ const SCHEDULE_ITEMS = [
       "Meet the organizers and learn about program for the day.",
   },
   {
-    time: "11:10 - 11:50",
-    event: "Student Showcase: Session 1",
+    time: "9:40 - 10:00",
+    event: "Student Panel",
     icon: Presentation,
     color: "primary",
-    details: "Grace Church: Neuroscience",
+    details: "",
   },
   {
-    time: "11:50 - 12:00",
-    event: "Break",
-    icon: Coffee,
-    color: "accent",
-  },
-  {
-    time: "12:00 - 12:40",
-    event: "Student Showcase: Session 2",
+    time: "10:00 - 10:35",
+    event: "Poster Session A",
     icon: Presentation,
     color: "primary",
-    details: "Collegiate: Neuroscience",
   },
   {
-    time: "12:40 - 12:50",
-    event: "Break",
-    icon: Coffee,
-    color: "accent",
-  },
-  {
-    time: "12:50 - 1:30",
-    event: "Student Showcase: Session 3",
+    time: "10:35 - 11:10",
+    event: "Poster Session B",
     icon: Presentation,
     color: "primary",
-    details: "Grace Church: Environmental Science",
   },
   {
-    time: "1:30 - 2:30",
+    time: "11:10 - 11:45",
+    event: "Poster Session C",
+    icon: Presentation,
+    color: "primary",
+    details: "",
+  },
+  // {
+  //   time: "11:45 - 12:00",
+  //   event: "Break",
+  //   icon: Coffee,
+  //   color: "accent",
+  // },
+  {
+    time: "11:45 - 12:00",
     event: "Closing Remarks, Lunch & Awards",
     icon: Trophy,
     color: "secondary",
-    details:
-      "Awards for outstanding contributions and time to chat!",
+    details: "Closing Remarks & Group Picture!",
   },
 ];
 
@@ -316,7 +314,7 @@ export function HomePage() {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-24 bg-slate-50">
+      <section id="schedule" className="py-12 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-4 mb-20 max-w-2xl mx-auto">
             {/* <Badge
@@ -339,15 +337,15 @@ export function HomePage() {
               Our format focuses on concise presentations and
               interactive Q&A sessions.
             </p>
-            <p
+            {/* <p
               className="text-lg text-slate-600 font-large"
               style={{ fontFamily: "Knewave, cursive" }}
             >
               PLANNING TBD
-            </p>
+            </p> */}
           </div>
 
-          {/* <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div className="relative space-y-3">
               <div className="absolute left-[96px] top-0 bottom-0 w-0.5 bg-slate-200 pointer-events-none hidden sm:block" />
 
@@ -363,10 +361,14 @@ export function HomePage() {
                   <div
                     className={`relative z-10 flex items-center justify-center w-12 h-12 rounded-2xl shadow-sm border-2 border-white shrink-0 transition-transform group-hover:scale-110 ${
                       item.color === "accent"
-                        ? "bg-accent text-accent-dark"
+                        ? "bg-accent-light text-accent-dark"
                         : item.color === "secondary"
-                          ? "bg-secondary text-white"
-                          : "bg-primary text-white"
+                          ? "bg-secondary-light text-secondary-dark"
+                          : item.color === "tertiary"
+                            ? "bg-tertiary text-white"
+                            : item.color === "muted"
+                              ? "bg-muted text-muted-foreground"
+                              : "bg-primary-light text-primary-dark"
                     }`}
                   >
                     <item.icon className="w-5 h-5" />
@@ -405,14 +407,14 @@ export function HomePage() {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
       {/* Materials Section */}
       <section
         id="materials"
-        className="py-24 bg-white relative overflow-hidden"
+        className="py-20 bg-white relative overflow-hidden"
       >
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
