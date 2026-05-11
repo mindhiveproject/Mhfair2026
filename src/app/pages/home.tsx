@@ -72,7 +72,7 @@ const SCHEDULE_ITEMS = [
   // },
   {
     time: "11:45 - 12:00",
-    event: "Closing Remarks, Lunch & Awards",
+    event: "Closing Remarks",
     icon: Trophy,
     color: "secondary",
     details: "Closing Remarks & Group Picture!",
