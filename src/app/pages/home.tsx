@@ -332,20 +332,28 @@ export function HomePage() {
                 Schedule
               </span>
             </h2>
-            <p className="text-lg text-slate-600 font-medium">
+            {/* <p className="text-lg text-slate-600 font-medium">
               Join us for a day of discovery and collaboration.
               Our format focuses on concise presentations and
               interactive Q&A sessions.
-            </p>
-            {/* <p
-              className="text-lg text-slate-600 font-large"
-              style={{ fontFamily: "Knewave, cursive" }}
-            >
-              PLANNING TBD
             </p> */}
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <p className="text-2xl text-slate-600 font-medium">
+                The event will take place between
+              </p>
+              <p
+                className="text-3xl text-slate-600 font-large"
+                style={{ fontFamily: "Knewave, cursive" }}
+              >
+                9:30 - 1 PM
+              </p>
+              <p className="text-2xl text-slate-600 font-medium">
+                details TBD!
+              </p>
+            </div>
           </div>
 
-          <div className="max-w-3xl mx-auto">
+          {/* <div className="max-w-3xl mx-auto">
             <div className="relative space-y-3">
               <div className="absolute left-[96px] top-0 bottom-0 w-0.5 bg-slate-200 pointer-events-none hidden sm:block" />
 
@@ -407,7 +415,7 @@ export function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
