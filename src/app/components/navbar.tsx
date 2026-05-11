@@ -60,7 +60,7 @@ export function Navbar() {
               {null /* Profile icon removed as requested */}
               <Button
                 size="sm"
-                className="bg-primary hover:bg-primary-dark text-white font-semibold rounded-full px-6 border-none shadow-md"
+                className="bg-primary hover:bg-primary-dark text-white font-semibold rounded-full px-6 border-none shadow-md text-[#171717]"
                 asChild
               >
                 <a

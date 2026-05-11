@@ -88,13 +88,13 @@ const MATERIALS = [
   //   // size: "2.4 MB",
   //   link: "https://docs.google.com/document/d/13Mtm7R-RLAcA2vYZdOfQqDwZSWL6FT7xDPEZM2V8DZo/edit?usp=sharing",
   // },
-  // {
-  //   title: "Poster Template",
-  //   description: "MindHive Poster Template.",
-  //   type: "PPTX",
-  //   // size: "1.1 MB",
-  //   link: "https://docs.google.com/presentation/d/1irxdLyCTTWgERrdLu2WGq0S1SKgVzVnk/edit?usp=sharing&ouid=111548153225746064432&rtpof=true&sd=true",
-  // },
+  {
+    title: "Poster Template",
+    description: "MindHive Poster Template.",
+    type: "PPTX",
+    size: "48x36 in",
+    link: "https://docs.google.com/presentation/d/1GncWkhprRe65qudLwNVXFuUjNWTUeidf/edit?usp=sharing&ouid=111548153225746064432&rtpof=true&sd=true",
+  },
   {
     title: "Flyer",
     description: "",
