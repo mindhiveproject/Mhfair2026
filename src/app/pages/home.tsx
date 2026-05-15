@@ -25,57 +25,65 @@ const MATERIALS_IMAGE = imgMaterials;
 
 const SCHEDULE_ITEMS = [
   {
-    time: "9:00 - 9:30",
-    event: "Arrival & Registration",
+    time: "10:00am - 10:30am",
+    event: "Arrival + Registration",
     icon: MapPin,
     color: "primary",
   },
   {
-    time: "9:30 - 9:40",
-    event: "Opening Remarks & MindHive Team Intro",
+    time: "10:30am - 10:40am",
+    event: "Opening Remarks",
     icon: Users,
     color: "secondary",
-    details:
-      "Meet the organizers and learn about program for the day.",
   },
   {
-    time: "9:40 - 10:00",
+    time: "10:40am - 11:00am",
     event: "Student Panel",
     icon: Presentation,
     color: "primary",
-    details: "",
   },
   {
-    time: "10:00 - 10:35",
+    time: "11:00am - 11:30am",
     event: "Poster Session A",
     icon: Presentation,
     color: "primary",
   },
   {
-    time: "10:35 - 11:10",
+    time: "11:30am - 11:35am",
+    event: "Break",
+    icon: Coffee,
+    color: "accent",
+  },
+  {
+    time: "11:35am - 12:05pm",
     event: "Poster Session B",
     icon: Presentation,
     color: "primary",
   },
   {
-    time: "11:10 - 11:45",
+    time: "12:05pm - 12:10pm",
+    event: "Break",
+    icon: Coffee,
+    color: "accent",
+  },
+  {
+    time: "12:10pm - 12:40pm",
     event: "Poster Session C",
     icon: Presentation,
     color: "primary",
-    details: "",
   },
-  // {
-  //   time: "11:45 - 12:00",
-  //   event: "Break",
-  //   icon: Coffee,
-  //   color: "accent",
-  // },
   {
-    time: "11:45 - 12:00",
+    time: "12:40pm - 12:45pm",
+    event: "Break",
+    icon: Coffee,
+    color: "accent",
+  },
+  {
+    time: "12:45pm - 1:00pm",
     event: "Closing Remarks",
     icon: Trophy,
     color: "secondary",
-    details: "Closing Remarks & Group Picture!",
+    details: "Closing Remarks + Group Picture!",
   },
 ];
 
@@ -337,7 +345,7 @@ export function HomePage() {
               Our format focuses on concise presentations and
               interactive Q&A sessions.
             </p> */}
-            <div className="flex flex-wrap items-center justify-center gap-2">
+            {/* <div className="flex flex-wrap items-center justify-center gap-2">
               <p className="text-2xl text-slate-600 font-medium">
                 The event will take place between
               </p>
@@ -350,10 +358,10 @@ export function HomePage() {
               <p className="text-2xl text-slate-600 font-medium">
                 details TBD!
               </p>
-            </div>
+            </div> */}
           </div>
 
-          {/* <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div className="relative space-y-3">
               <div className="absolute left-[96px] top-0 bottom-0 w-0.5 bg-slate-200 pointer-events-none hidden sm:block" />
 
@@ -415,7 +423,7 @@ export function HomePage() {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
