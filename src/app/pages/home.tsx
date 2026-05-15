@@ -31,17 +31,17 @@ const SCHEDULE_ITEMS = [
     color: "primary",
   },
   {
-    time: "10:30am - 10:40am",
+    time: "10:30am - 11:00am",
     event: "Opening Remarks",
     icon: Users,
     color: "secondary",
   },
-  {
-    time: "10:40am - 11:00am",
-    event: "Student Panel",
-    icon: Presentation,
-    color: "primary",
-  },
+  // {
+  //   time: "10:40am - 11:00am",
+  //   event: "Student Panel",
+  //   icon: Presentation,
+  //   color: "primary",
+  // },
   {
     time: "11:00am - 11:30am",
     event: "Poster Session A",
