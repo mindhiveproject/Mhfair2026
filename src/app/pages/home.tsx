@@ -32,7 +32,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "10:30am - 11:00am",
-    event: "Opening Remarks",
+    event: "Opening Remarks + Speakers",
     icon: Users,
     color: "secondary",
   },
