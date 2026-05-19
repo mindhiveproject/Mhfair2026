@@ -50,7 +50,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "11:30am - 11:35am",
-    event: "Break",
+    event: "Session prep",
     icon: Coffee,
     color: "accent",
   },
@@ -62,7 +62,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "12:05pm - 12:10pm",
-    event: "Break",
+    event: "Session prep",
     icon: Coffee,
     color: "accent",
   },
@@ -74,7 +74,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "12:40pm - 12:45pm",
-    event: "Break",
+    event: "Session prep",
     icon: Coffee,
     color: "accent",
   },
@@ -108,7 +108,7 @@ const MATERIALS = [
     description: "",
     type: "PDF",
     // size: "850 KB",
-    link: "https://drive.google.com/file/d/1oMmhDKVuCrJK5cGnPeyhbwOjFPrfvKir/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1FvwqWJlKbtx9OFu_2qWzRETi68b4QEQZ/view?usp=drive_link",
   },
 ];
 
@@ -392,7 +392,7 @@ export function HomePage() {
 
                   <div className="flex-grow bg-white p-4 sm:py-3 sm:px-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6">
                     <div className="flex items-center min-w-[140px]">
-                      <time className="font-black text-primary font-mono tracking-tight text-lg">
+                      <time className="font-black text-primary font-mono tracking-tight text-lg text-[#5d5763]">
                         {item.time}
                       </time>
                     </div>
