@@ -50,7 +50,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "11:30am - 11:35am",
-    event: "Session prep",
+    event: "Poster session B prep",
     icon: Coffee,
     color: "accent",
   },
@@ -62,7 +62,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "12:05pm - 12:10pm",
-    event: "Session prep",
+    event: "Poster session C prep",
     icon: Coffee,
     color: "accent",
   },
@@ -74,7 +74,7 @@ const SCHEDULE_ITEMS = [
   },
   {
     time: "12:40pm - 12:45pm",
-    event: "Session prep",
+    event: "Poster session wrap-up",
     icon: Coffee,
     color: "accent",
   },
@@ -213,9 +213,8 @@ export function HomePage() {
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-600 max-w-xl leading-relaxed font-medium">
-                  A gathering for students, teachers, and
-                  scientists to exchange ideas, share research,
-                  and celebrate the process of discovery.
+                  A gathering for high school students from
+                  across NYC, their teachers, and scientists
                 </p>
               </div>
 
@@ -241,7 +240,7 @@ export function HomePage() {
                 </Button>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100">
+              <div className="flex flex-col gap-6 pt-4 border-t border-slate-100">
                 <a
                   href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWU5ZzI0YnRtbzk1dnQxNjE2ampzNHJjbWcgbnl1LmVkdV9zZTc4OXQ0MnFlbzU3Nmpocjc3MXZhampmNEBn&tmsrc=nyu.edu_se789t42qeo576jhr771vajjf4%40group.calendar.google.com"
                   target="_blank"
@@ -251,7 +250,7 @@ export function HomePage() {
                   <div className="p-2.5 bg-primary-light text-primary-dark rounded-xl shadow-sm group-hover/link:bg-tertiary group-hover/link:text-white transition-colors">
                     <Calendar className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                       Date
                     </p>
@@ -269,15 +268,18 @@ export function HomePage() {
                   <div className="p-2.5 bg-secondary-light text-secondary rounded-xl shadow-sm group-hover/link:bg-secondary group-hover/link:text-white transition-colors">
                     <MapPin className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                       Location
                     </p>
                     <p className="font-bold text-slate-800">
-                      Rosenthal Pavilion
+                      NYU Kimmel Center for University Life,
                     </p>
                     <p className="font-bold text-slate-800">
-                      60 Washington Square S
+                      Rosenthal Pavilion
+                    </p>
+                    <p className="font-bold text-slate-500">
+                      (60 Washington Square South, 10th Floor)
                     </p>
                   </div>
                 </a>
@@ -392,7 +394,7 @@ export function HomePage() {
 
                   <div className="flex-grow bg-white p-4 sm:py-3 sm:px-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6">
                     <div className="flex items-center min-w-[140px]">
-                      <time className="font-black text-primary font-mono tracking-tight text-lg text-[#5d5763]">
+                      <time className="font-black font-mono tracking-tight text-lg text-[#5D5763]">
                         {item.time}
                       </time>
                     </div>
